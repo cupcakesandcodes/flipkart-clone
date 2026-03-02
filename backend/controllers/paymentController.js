@@ -1,6 +1,6 @@
 const asyncErrorHandler = require('../middlewares/asyncErrorHandler');
-// const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-const paytm = require('paytmchecksum');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+// const paytm = require('paytmchecksum');
 const https = require('https');
 const Payment = require('../models/paymentModel');
 const ErrorHandler = require('../utils/errorHandler');
